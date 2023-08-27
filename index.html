@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open webcam using JavaScript.</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="videoCam"></div>
+        <br>
+        <h2
+            class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+            Let's Say Cheese 😁</h2>
+        <br>
+        <video id="videoCam" autoplay></video>
+        <div class="btn-div">
+            <button id="startBtn" onclick="openCam()">Open Camera</button>
+            <button id="CloseBtn" onclick="closeCam()">Close Camera</button>
+        </div>
+
+        <script src="index.js"></script>
+    </div>
+</body>
+
+
+</html>

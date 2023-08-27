@@ -1,0 +1,116 @@
+* {
+    background-color: #658EA9;
+}
+
+#videoCam {
+    width: 630px;
+    height: 300px;
+    margin-left: 0px;
+    border: 3px solid #ccc;
+    background: black;
+}
+
+h2 {
+    font-family: serif;
+}
+
+.btn-div {
+    margin-top: 1rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background: #6888ac00;
+}
+
+#startBtn {
+    border: 2px solid #1f0202;
+    border-radius: 3rem;
+    color: #131328;
+    font-family: roboto;
+    font-weight: 2rem;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    position: relative;
+    text-decoration: none;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+}
+
+#startBtn::after {
+    background-color: #131328;
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: 0.2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+#startBtn:hover::after {
+    transform: translate(0, 0);
+}
+
+#startBtn:hover {
+    border: 2px solid transparent;
+    color: white;
+    transform: scale(1.05);
+    will-change: transform;
+}
+
+#CloseBtn {
+    border: 2px solid #1f0202;
+    border-radius: 3rem;
+    color: #131328;
+    font-family: roboto;
+    font-weight: 2rem;
+    overflow: hidden;
+    padding: 1rem 2rem;
+    position: relative;
+    text-decoration: none;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+}
+
+#CloseBtn::after {
+    background-color: #131328;
+    border-radius: 3rem;
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: 0.2s transform ease-out;
+    will-change: transform;
+    z-index: -1;
+}
+
+#CloseBtn:hover::after {
+    transform: translate(0, 0);
+}
+
+#CloseBtn:hover {
+    border: 2px solid transparent;
+    color: white;
+    transform: scale(1.05);
+    will-change: transform;
+}
